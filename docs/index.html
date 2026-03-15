@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriveClip Pipeline</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">GitHub-ready sports media workflow</p>
+      <h1>DriveClip Pipeline</h1>
+      <p class="lead">
+        Clean up sports clips automatically from Google Drive using repeatable presets,
+        FFmpeg processing, and a simple publishing workflow.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="../README.md">Read the README</a>
+        <a class="button" href="architecture.html">View architecture</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid three">
+      <article class="card">
+        <h2>1. Ingest</h2>
+        <p>Upload clips to Google Drive, mirror or sync them locally, and funnel them into a clean processing queue.</p>
+      </article>
+      <article class="card">
+        <h2>2. Process</h2>
+        <p>Apply color cleanup, resize, audio normalization, and sport-specific presets using FFmpeg.</p>
+      </article>
+      <article class="card">
+        <h2>3. Publish</h2>
+        <p>Review cleaned clips, send them into your editing app, and keep the project documentation live on GitHub Pages.</p>
+      </article>
+    </section>
+
+    <section class="card wide">
+      <h2>Recommended flow</h2>
+      <pre class="flow">Google Drive Uploads
+      ↓
+Local Sync / Automation Trigger
+      ↓
+Incoming Folder
+      ↓
+FFmpeg Cleanup Preset
+      ↓
+Cleaned Clips Output
+      ↓
+CapCut / Final Cut / Premiere / AI Highlight Workflow</pre>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Included presets</h2>
+        <ul>
+          <li>Softball daylight</li>
+          <li>Baseball daylight</li>
+          <li>Basketball indoor</li>
+          <li>General action</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Best practices baked in</h2>
+        <ul>
+          <li>Keep raw footage untouched</li>
+          <li>Normalize exports to 1080p</li>
+          <li>Use conservative color cleanup</li>
+          <li>Apply audio leveling</li>
+          <li>Use naming conventions for games and clips</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

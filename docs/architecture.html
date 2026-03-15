@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriveClip Pipeline Architecture</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap page">
+    <a href="index.html" class="back">← Back to home</a>
+    <h1>Architecture</h1>
+    <div class="card wide">
+      <pre class="flow">Google Drive
+  ├─ incoming_clips/
+  ├─ cleaned_clips/
+  └─ archive/
+        ↓
+Google Drive Desktop / rclone / n8n
+        ↓
+Local incoming/
+        ↓
+Python batch processor
+        ↓
+FFmpeg preset engine
+        ↓
+output/*.cleaned.mp4
+        ↓
+Editor or AI highlight workflow</pre>
+    </div>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Local folders</h2>
+        <ul>
+          <li><strong>incoming/</strong> raw synced clips</li>
+          <li><strong>processing/</strong> optional active workspace</li>
+          <li><strong>output/</strong> cleaned exports</li>
+          <li><strong>logs/</strong> pipeline output</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Upgrade ideas</h2>
+        <ul>
+          <li>dead-space trimming</li>
+          <li>player ID tagging</li>
+          <li>event detection</li>
+          <li>automatic highlight reel assembly</li>
+          <li>coach and recruiter delivery pages</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
